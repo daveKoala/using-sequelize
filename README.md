@@ -48,3 +48,9 @@ Generate a new seeding file
 node_modules/.bin/sequelize seed:generate --name demo-user
 ```
 This will create a seed file, this will need editing with objects/rows of data
+
+## Existing database?
+So you have an existing database, dont bother creating all the models by hand use `sequelize-auto`.
+It can be done from the command line or programmatically. See index.js.
+
+You will however have to mannually adjust the relationships between tables. The ./model/index.js file is the main entry point.
